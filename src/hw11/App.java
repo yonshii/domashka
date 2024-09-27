@@ -1,11 +1,8 @@
 package hw11;
-
-public class App {
-    static class Person{
-
-         String name;
-         int age;
-         String profession;
+    class Person{
+        String name;
+        int age;
+        String profession;
 
         public Person(String name, int age, String profession){
             this.name = name;
@@ -13,27 +10,28 @@ public class App {
             this.profession = profession;
         }
 
-        public void infoPerson(){
+        public void printPersonInfo(){
             System.out.println("Ім'я: " + name + ", Вік: " + age + ", Професія: " + profession);
         }
 
-        public void changePerson(String newProfession) {
+        public void setProfession(String newProfession) {
             this.profession = newProfession;
         }
     }
+public class App {
     public static void main(String[] args) {
         Person person1 = new Person("Дмитро",45, "Лікар");
         Person person2 = new Person("Віталіна",31, "Перукар");
         Person person3 = new Person("Саша",23,"Пілот");
 
-        person1.infoPerson();
-        person2.infoPerson();
-        person3.infoPerson();
+        person1.printPersonInfo();
+        person2.printPersonInfo();
+        person3.printPersonInfo();
 
         Person person4 = new Person("Настя", 56,"Маляр");
-        person4.infoPerson();
-        person4.changePerson("Клерк");
+        person4.printPersonInfo();
+        person4.setProfession("Клерк");
         System.out.println();
-        person4.infoPerson();
+        person4.printPersonInfo();
     }
 }
