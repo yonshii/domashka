@@ -1,23 +1,4 @@
 package hw11;
-    class Person{
-        String name;
-        int age;
-        String profession;
-
-        public Person(String name, int age, String profession){
-            this.name = name;
-            this.age = age;
-            this.profession = profession;
-        }
-
-        public void printPersonInfo(){
-            System.out.println("Ім'я: " + name + ", Вік: " + age + ", Професія: " + profession);
-        }
-
-        public void setProfession(String newProfession) {
-            this.profession = newProfession;
-        }
-    }
 public class App {
     public static void main(String[] args) {
         Person person1 = new Person("Дмитро",45, "Лікар");
