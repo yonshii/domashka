@@ -2,16 +2,16 @@ package hw13;
 
 public class Main {
     public static void main(String[] args) {
-        method[] methods = {
-                new circle(13),
-                new triangle(12, 5),
-                new square(3)
+        AreaShape[] methods = {
+                new Circle(13),
+                new Triangle(12, 5),
+                new Square(3)
         };
         System.out.println("Площа всіх фігур у масиві: " + calculateTotalArea(methods));
     }
-    public static double calculateTotalArea (method[]methods){
+    public static double calculateTotalArea (AreaShape[]methods){
         double area = 0;
-        for (method method : methods) {
+        for (AreaShape method : methods) {
             area += method.getArea();
         }
         return area;

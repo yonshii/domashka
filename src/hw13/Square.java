@@ -1,9 +1,9 @@
 package hw13;
 
-public class square extends method {
+public final class Square extends AreaShape {
     double side;
 
-    public square(double side) {
+    public Square(double side) {
         this.side = side;
     }
 
